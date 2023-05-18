@@ -123,7 +123,7 @@ const Navbar = () => {
                   .filter((product) => product.title.longTitle.toLowerCase().includes(text.toLowerCase()))
                   .map((product) => (
                     <ListItem>
-                      <NavLink to={`/getproductsone/${product.id}`} onClick={() => setLiopen(true)}>
+                      <NavLink to={`https://clone-backend-zo32.onrender.com/getproductsone/${product.id}`} onClick={() => setLiopen(true)}>
                         {product.title.longTitle}
                       </NavLink>
                     </ListItem>
