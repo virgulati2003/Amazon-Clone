@@ -11,7 +11,11 @@ const router=require("./routes/router")
 const cookieParser = require("cookie-parser");
 app.use(express.json())
 app.use(cookieParser(""));
-app.use(cors())
+app.use(cors({
+    origin: ['https://amazon-clone-mo33.onrender.com/', 'https://clone-backend-zo32.onrender.com'],
+    credentials:true,
+    methods:"GET,HEAD,PUT,PATCH,POST,DELETE",
+}))
 app.use(router)
 if(process.env.NODE_ENV == "production"){
     app.use(express.static("client/build"));
