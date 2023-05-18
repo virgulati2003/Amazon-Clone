@@ -27,7 +27,7 @@ const Sign_in = () => {
         const { email, password } = logdata;
         // console.log(email);
         try {
-            const res = await fetch("/login", {
+            const res = await fetch("https://clone-backend-zo32.onrender.com/login", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

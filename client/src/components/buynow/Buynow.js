@@ -12,7 +12,7 @@ const Buynow = () => {
     // console.log(cartdata.length);
 
     const getdatabuy = async () => {
-        const res = await fetch("/cartdetails", {
+        const res = await fetch("https://clone-backend-zo32.onrender.com/cartdetails", {
             method: "GET",
             headers: {
                 Accept:"application/json",

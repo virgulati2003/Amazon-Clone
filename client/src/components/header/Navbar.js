@@ -32,7 +32,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   const [open, setOpen] = useState(false);
   const getdetailsvaliduser = async () => {
-    const res = await fetch("/validuser", {
+    const res = await fetch("https://clone-backend-zo32.onrender.com/validuser", {
       method: "GET",
       headers: {
         Accept: "application/json",
@@ -62,7 +62,7 @@ const Navbar = () => {
     setDropen(false);
   };
   const logoutuser = async () => {
-    const res2 = await fetch("/logout", {
+    const res2 = await fetch("https://clone-backend-zo32.onrender.com/logout", {
       method: "GET",
       headers: {
         Accept: "application/json",

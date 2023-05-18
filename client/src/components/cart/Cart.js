@@ -23,7 +23,7 @@ const Cart = () => {
     // console.log([inddata]);
 
     const getinddata = async () => {
-        const res = await fetch(`/getproductsone/${id}`, {
+        const res = await fetch(`https://clone-backend-zo32.onrender.com/getproductsone/${id}`, {
             method: "GET",
             headers: {
                 Accept: "application/json",
