@@ -4,6 +4,8 @@ const Products=require("../models/productsSchema")
 const User=require("../models/userSchema")
 const bcrypt = require("bcryptjs");
 const authenicate = require("../middleware/authenticate");
+const cookieParser = require("cookie-parser");
+app.use(cookieParser());
 router.get("/getproducts",async(req,res)=>{
     try{
         const productsdata=await Products.find();
