@@ -122,7 +122,7 @@ router.post("/addcart/:id", authenicate, async (req, res) => {
             console.log("ehy")
         }
     } catch (error) {
-        console.log(error);
+        console.log("cart error present");
     }
 });
 router.get("/cartdetails", authenicate, async (req, res) => {
