@@ -10,9 +10,10 @@ const cors=require("cors")
 const router=require("./routes/router")
 const cookieParser = require("cookie-parser");
 app.use(express.json())
+app.use(express.urlencoded({ extended: true })) 
 app.use(cookieParser());
 app.use(cors({
-    origin: ['https://amazon-clone-mo33.onrender.com'],
+    origin: ['https://amazon-clone-mo33.onrender.com','https://clone-backend-zo32.onrender.com'],
     credentials:true,
     methods:"GET,HEAD,PUT,PATCH,POST,DELETE",
 }))

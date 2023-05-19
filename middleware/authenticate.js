@@ -4,7 +4,7 @@ const keysecret = process.env.KEY
 
 const authenicate = async(req,res,next)=>{
     try {
-        const token = req.cookies['eccomerce'];
+        const token = req.cookies.eccomerce;
         
         const verifyToken = jwt.verify(token,keysecret);
      
