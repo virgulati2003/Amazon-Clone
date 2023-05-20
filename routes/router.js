@@ -85,9 +85,9 @@ router.post("/login", async (req, res) => {
                 console.log(token);
 
                 res.cookie("eccomerce", token, {
-                    expires: new Date(Date.now() + 2589000),
+                    expires:  new Date(Date.now() + (30*24*3600000)),
                     httpOnly: true,
-                    
+                    secure:true,
                     sameSite: "none"
                 });
                 res.status(201).json(userlogin);

@@ -10,6 +10,6 @@ export const getproducts=()=>async(dispatch)=>{
     dispatch({type:"SUCCESS_GET_PRODUCTS",payload:res});
     }
     catch(error){
-        dispatch({type:"FAIL_GET_PRODUCTS",payload:error.response});
+       // dispatch({type:"FAIL_GET_PRODUCTS",payload:error.response});
     }
 }

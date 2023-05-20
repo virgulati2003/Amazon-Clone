@@ -32,10 +32,11 @@ const Sign_in = () => {
                 headers: {
                     "Content-Type": "application/json"
                 },
-                credentials: "include",
+               
                 body: JSON.stringify({
                     email, password
-                })
+                }),
+                credentials: "include"
             });
 
 
